@@ -14,4 +14,3 @@ const parkTypesArray = [
     "Parkway"
 ];
 
-localStorage.setItem('parkTypesArray', JSON.stringify(parkTypesArray));
