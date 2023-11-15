@@ -1,4 +1,4 @@
-const mountainsArray = [
+const mountains = [
     {
         name: "Mt. Washington",
         elevation: 6288,
@@ -527,4 +527,6 @@ const mountainsArray = [
             lng: -71.556745
         }
     }
-]
+];
+
+
