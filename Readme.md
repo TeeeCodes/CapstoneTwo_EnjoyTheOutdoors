@@ -1,24 +1,21 @@
-#Capstone 2: Enjoy the outdoors
 
+Absolutely! Here's a revised version for your README:
 
+Enjoy the Outdoors
+Welcome to Enjoy the Outdoors! This project is a blend of HTML, CSS, and JS, aiming to enhance your exploration of national parks with a seamless user interface. Discover the beauty of various parks through three main pages:
 
-Welcome to the Enjoy the Outdoors , an HTML, CSS, and JS project designed to make exploring national parks a seamless experience. Navigate easily through the user interface designed for effortless interaction. Explore diverse content across three pages - Home, and specialized pages for searching by location or type.
+1. Home Page
+The starting point for your adventure, offering an overview of what Enjoy the Outdoors has to offer.
 
-##Pages
+2. Location Search
+A specialized page allowing you to search for parks based on location, making it easier to find parks near your desired area.
 
-##Home
+3. Type Search
+Another specialized page focused on searching parks by their unique types, enabling you to explore parks based on specific interests.
 
-This the landing page for our website and it includes navigation and highlights things people can do to enjoy the great outdoors. 
+Navigate effortlessly through the interface, designed for smooth interaction and easy access to diverse park content.
 
-![Home page of website]()
-
-###National Park
-![National park page]()
-
-###Mountain info
-![Mountain information page]()
-
-##Interesting Code Snippet
+## Interesting Code Snippet
 ```
 $("#thirdDropdown").select2({
     data: parkTypeOptions,
