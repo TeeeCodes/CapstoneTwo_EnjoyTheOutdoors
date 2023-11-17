@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/images/pexels-eberhard-grossgasteiger-1287145.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif; /* Example font-family */
+  /* Other styles for your content */
+}
+
+/* Style for the card container */
+.card {
+  width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+/* Style for dropdowns within the card */
+.card select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Style for other elements within the card */
+.card p {
+  margin-bottom: 8px;
+}
+
+/* Style for the parkDiv content */
+.card a {
+  color: blue;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Select CSS */
+/* Style for Select2 dropdowns */
+.select2-container {
+  width: 100%; /* Adjust width as needed */
+}
+
+.select2-container--default .select2-selection--single {
+  height: 38px; /* Adjust height as needed */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  height: 36px; /* Adjust height as needed */
+}
+
+/* Style for options within the Select2 dropdown */
+.select2-results__option {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+/* Style for selected option in the Select2 dropdown */
+.select2-selection__rendered {
+  color: #333;
+  padding-left: 10px;
+}

@@ -1,0 +1,262 @@
+body {
+    background: #000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  svg {
+    max-height: 95vh;
+  }
+  
+  #stars_1_ rect {
+    animation: starsAnim 2s .5s infinite ease-out;
+  }
+  
+  #stars_1_ rect:nth-child(odd) {
+    animation: starsAnim 1.2s infinite ease-out;
+  }
+  
+  #comet {
+    animation: cometAnim 15s 2 ease-out;
+  }
+  
+  #moon_1_ {
+    animation: moonAnim 360s infinite linear;
+  }
+  
+  #left-eyeball,
+  #right-eyeball {
+    animation: eyemovement 7s infinite ease-out;
+    transform-origin: center center;
+  }
+  
+  #right-eye,
+  #left-eye {
+     transform-origin: center center;
+    animation: eyeClose 3s 1s infinite ease-out;
+  }
+  
+  #right-eyebrow,
+  #left-eyebrow {
+    animation: eyebrowAnim 3s 3.8s infinite ease-out;
+  }
+  
+  #cloud1,
+  #cloud3,
+  #cloud5 {
+    animation: cloudAnim 40s infinite ease-out;
+  }
+  
+  #cloud2,
+  #cloud4,
+  #cloud6,
+  #cloud7 {
+    animation: cloudAnim 35s infinite ease-out;
+  }
+  
+  #astro {
+    animation: floatAnim 17s infinite ease-out;
+  }
+  
+  #faceshadow {
+    animation: floatAnim2 17s infinite ease-out;
+  }
+  
+  #eyeclose2,
+  #eyeclose2 {
+    animation: opacAnim 3s infinite ease-out;
+  }
+  
+  @keyframes eyebrowAnim {
+    0% {
+      transform: translateY(0px) translateX(0px);
+    }
+    3% {
+      transform: translateY(10px) translateX(2px);
+    }
+    5% {
+      transform: translateY(10px) translateX(2px);
+    }
+    14%,
+    100% {
+      transform: translateY(0px) translateX(0px);
+    }
+  }
+  
+  @keyframes opacAnim {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes eyeClose {
+    0% {
+      transform: scale(1);
+     
+    }
+    93% {
+      transform: scale(1);
+    }
+    95% {
+      transform: scale(1, 0) translateY(15px) translateX(2px);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  /*Eye movement*/
+  
+  @keyframes eyemovement {
+    0% {
+      
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+      transform: translateY(3px) translateX(-5px);
+    }
+    100% {
+      transform: translateY(0px) translateX(0px);
+    }
+  }
+  
+  @keyframes floatAnim {
+    0% {
+      transform: translateY(0) translateX(0px);
+    }
+    25% {
+      transform: translateY(10px) translateX(-15px);
+    }
+    50% {
+      transform: translateY(5px) translateX(-20px);
+    }
+     75% {
+      transform: translateY(-10px) translateX(-5px);
+    }
+    100% {
+      transform: translateY(0) translateX(0px);
+    }
+  }
+  
+  @keyframes floatAnim2 {
+    0% {
+      transform: translateY(0) translateX(0px);
+    }
+    50% {
+      transform: translateY(0) translateX(15px);
+    }
+    100% {
+      transform: translateY(0) translateX(0px);
+    }
+  }
+  
+  @keyframes cloudAnim {
+    0% {
+      transform: translateY(0) translateX(180px);
+    }
+    50% {
+      transform: translateY(0) translateX(0px);
+    }
+    100% {
+      transform: translateY(0) translateX(180px);
+    }
+  }
+  
+  @keyframes moonAnim {
+    0% {
+      transform: translateY(0) translateX(0px);
+    }
+    25% {
+      transform: translateY(-100px) translateX(-300px);
+    }
+    50% {
+      transform: translateY(-130px) translateX(-600px);
+    }
+    75% {
+      transform: translateY(-200px) translateX(-300px);
+    }
+    100% {
+      transform: translateY(0) translateX(-9990px);
+    }
+  }
+  
+  @keyframes starsAnim {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  
+  @keyframes cometAnim {
+    0% {
+      transform: translateY(50px) translateX(900px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(3px) translateX(-800px);
+      opacity: 0.8;
+    }
+  }
+
+  /* Header */
+
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  .cta {
+    display: flex;
+    flex-direction:column;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .cta a {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta a:hover {
+    background-color: #555;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    bottom: 0;
+    width: 100%;
+  }

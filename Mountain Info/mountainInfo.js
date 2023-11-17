@@ -535,13 +535,15 @@ let imgTagEl = document.getElementById("imgTag");
 
 window.onload = () => {
   populateMountain();
+  $('#carouselExampleFade').carousel();
+
 
   mountainInfoEl.onchange = () => {
     let index = mountainInfoEl.selectedIndex;
     // Clear Previous Option
     pTagEl.innerHTML = "";
     imgTagEl.innerHTML = "";
-    
+
     // What would you want your HTML to look like?
     // <div id="container"><h1></h1></div>
 
@@ -550,37 +552,31 @@ window.onload = () => {
     let imgBox = document.createElement("img");
     imgBox.src = "/images/" + mountains[index].img;
     imgBox.alt = mountains[index].name;
-    imgBox.width = 350;
     imgContainer.appendChild(imgBox);
     imgTagEl.appendChild(imgContainer);
 
     // Name
     let nameContainer = document.createElement("div");
     let mountainName = document.createElement("h1");
-    mountainName.textContent = mountains[index].name;
+    mountainName.textContent = "Name:    " + mountains[index].name;
     nameContainer.appendChild(mountainName);
     pTagEl.appendChild(nameContainer);
 
     // Elevation
     let elevationContainer = document.createElement("div");
     let elevationNum = document.createElement("p");
-    elevationNum.textContent = mountains[index].elevation;
+    elevationNum.textContent = "Elevation:    " + mountains[index].elevation;
     elevationContainer.appendChild(elevationNum);
     pTagEl.appendChild(elevationContainer);
 
     // desc
     let descContainer = document.createElement("div");
     let descBox = document.createElement("p");
-    descBox.textContent = mountains[index].desc;
+    descBox.textContent = "Description:    " + mountains[index].desc;
     descContainer.appendChild(descBox);
     pTagEl.appendChild(descContainer);
 
-    // coords or fun fact??
-    // let coordsContainer = document.createElement("div");
-    // let coordsNum = document.createElement("p");
-    // coordsNum.textContent = mountains[index].coords;
-    // coordsContainer.appendChild(coordsNum);
-    // pTagEl.appendChild(coordsContainer);
+    // Add a line break
   };
 };
 
